@@ -11,6 +11,6 @@ export async function POST(request: Request) {
   if (!process.env.REVALIDATE_SECRET || secret !== process.env.REVALIDATE_SECRET) {
     return new Response("Unauthorized", { status: 401 });
   }
-  revalidateTag(BLOG_TAG);
+  revalidateTag(BLOG_TAG, { expire: 0 });
   return Response.json({ revalidated: true, now: Date.now() });
 }
