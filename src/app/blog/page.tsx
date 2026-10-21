@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PostCard from "@/components/PostCard";
+import SearchBar from "@/components/SearchBar";
 import { getPublishedPosts, type PostSummary } from "@/lib/blog";
 import { SITE_NAME } from "@/lib/site";
 
@@ -43,6 +44,9 @@ export default async function BlogIndex({
           <p className="mt-3 max-w-xl text-[17px] text-on-dark-muted">
             News, rules, drills, strategy and gear — everything to help you play better.
           </p>
+          <div className="mt-6 max-w-md">
+            <SearchBar />
+          </div>
         </div>
       </section>
 

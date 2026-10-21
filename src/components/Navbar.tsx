@@ -4,13 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Logo from "./Logo";
-import SearchBar from "./SearchBar";
 
 const NAV = [
   { label: "Home", href: "/" },
   { label: "Pickleball Basics", href: "/blog/category/pickleball-basics" },
-  { label: "Rules & Scoring", href: "/blog/category/rules-scoring" },
-  { label: "Tips & Strategy", href: "/blog/category/tips-strategy" },
+  { label: "Rules", href: "/blog/category/rules-scoring" },
+  { label: "Tips", href: "/blog/category/tips-strategy" },
   { label: "Gear & Paddles", href: "/blog/category/gear-paddles" },
   { label: "Blog", href: "/blog" },
 ];
@@ -24,7 +23,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-hairline-dark bg-navy">
-      <div className="container-site flex h-16 items-center justify-between gap-4">
+      <div className="container-site flex h-20 items-center justify-between gap-4">
         <Logo />
 
         {/* Desktop nav */}
@@ -34,18 +33,14 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               aria-current={isActive(l.href) ? "page" : undefined}
-              className={`rounded-[var(--radius-md)] px-3 py-2 text-[14px] font-semibold transition-colors ${
-                isActive(l.href) ? "text-brand" : "text-on-dark hover:text-brand"
+              className={`rounded-[var(--radius-md)] px-3 py-2 text-[15px] font-bold transition-colors ${
+                isActive(l.href) ? "text-brand" : "text-white hover:text-brand"
               }`}
             >
               {l.label}
             </Link>
           ))}
         </nav>
-
-        <div className="hidden items-center gap-3 lg:flex">
-          <SearchBar className="w-52" />
-        </div>
 
         {/* Mobile toggle */}
         <button
@@ -70,16 +65,13 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`rounded-[var(--radius-md)] px-3 py-2.5 text-[15px] font-semibold ${
-                  isActive(l.href) ? "text-brand" : "text-on-dark"
+                className={`rounded-[var(--radius-md)] px-3 py-2.5 text-[15px] font-bold ${
+                  isActive(l.href) ? "text-brand" : "text-white"
                 }`}
               >
                 {l.label}
               </Link>
             ))}
-            <div className="mt-3">
-              <SearchBar />
-            </div>
           </div>
         </div>
       )}
