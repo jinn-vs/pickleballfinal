@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const category = await getCategoryBySlug(slug).catch(() => null);
   if (!category) return { title: "Topic not found" };
   return {
-    title: `${category.name} — Pickleball ${category.name}`,
+    title: `${category.name}: Pickleball ${category.name}`,
     description: brandDescription(category.description ?? `${category.name} articles and guides from ${SITE_NAME}.`),
     alternates: { canonical: `/blog/category/${slug}` },
   };

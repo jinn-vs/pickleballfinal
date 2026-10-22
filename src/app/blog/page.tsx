@@ -7,7 +7,7 @@ import { SITE_NAME } from "@/lib/site";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "Pickleball Blog — Guides, Rules, Drills & Gear",
+  title: "Pickleball Blog: Guides, Rules, Drills & Gear",
   description: `Every article from ${SITE_NAME}: rules explainers, drills, strategy and honest pickleball gear reviews.`,
   alternates: { canonical: "/blog" },
 };
@@ -42,7 +42,7 @@ export default async function BlogIndex({
         <div className="container-site py-14">
           <h1 className="display-lg text-on-dark">The Pickleball Blog</h1>
           <p className="mt-3 max-w-xl text-[17px] text-on-dark-muted">
-            News, rules, drills, strategy and gear — everything to help you play better.
+            News, rules, drills, strategy and gear, everything to help you play better.
           </p>
           <div className="mt-6 max-w-md">
             <SearchBar />

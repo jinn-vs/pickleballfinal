@@ -3,9 +3,9 @@
 /*
   Pickleballreads design system
   Adapted from a MongoDB-style token system, retuned to the brand:
-    · Accent / CTA   lime  #d3fa05  (from the logo) — pill buttons, text = navy
-    · Dark bands     navy  #0b132b  — hero, footer, dark CTA banners
-    · Content        white #ffffff  — all article/listing surfaces
+    · Accent / CTA   lime  #d3fa05  (from the logo): pill buttons, text = navy
+    · Dark bands     navy  #0b132b: hero, footer, dark CTA banners
+    · Content        white #ffffff: all article/listing surfaces
   Font: Hanken Grotesk (geometric, Euclid-like) + Source Code Pro for code.
 
   NOTE: base + component styles live in @layer so Tailwind utilities
@@ -93,7 +93,7 @@
     padding-inline: 20px;
   }
 
-  /* Display headings — color here is a default; text-* utilities override it. */
+  /* Display headings, color here is a default; text-* utilities override it. */
   .display-xl { font-size: clamp(40px, 6vw, 68px); font-weight: 600; line-height: 1.08; letter-spacing: -0.03em; color: var(--color-ink); }
   .display-lg { font-size: clamp(32px, 4.5vw, 52px); font-weight: 600; line-height: 1.12; letter-spacing: -0.025em; color: var(--color-ink); }
   .display-md { font-size: clamp(26px, 3vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -0.02em; color: var(--color-ink); }

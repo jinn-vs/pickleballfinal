@@ -8,7 +8,7 @@ export const SITE_URL = (
 
 export const SITE_NAME = "Pickleballreads";
 export const SITE_DESCRIPTION =
-  "Pickleball news, rules, drills, gear reviews and strategy — everything you need to learn the game and level up, from first serve to tournament play.";
+  "Pickleball news, rules, drills, gear reviews and strategy, everything you need to learn the game and level up, from first serve to tournament play.";
 export const CONTACT_EMAIL = "hello@pickleballreads.com";
 
 export const absoluteUrl = (path: string) =>
@@ -23,5 +23,5 @@ export function brandTitle(title: string) {
 export function brandDescription(text: string | null | undefined, max = 160) {
   const t = (text ?? "").replace(/\s+/g, " ").trim();
   if (t.length <= max) return t || SITE_DESCRIPTION;
-  return `${t.slice(0, t.lastIndexOf(" ", max - 1)).replace(/[,;:.\s]+$/, "")}…`;
+  return `${t.slice(0, t.lastIndexOf(" ", max - 1)).replace(/[,;:.\s]+$/, "")}...`;
 }

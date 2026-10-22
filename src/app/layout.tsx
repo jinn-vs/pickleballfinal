@@ -20,7 +20,7 @@ const sourceCode = Source_Code_Pro({
   display: "swap",
 });
 
-const DEFAULT_TITLE = `${SITE_NAME} — Pickleball News, Rules, Drills & Gear`;
+const DEFAULT_TITLE = `${SITE_NAME}: Pickleball News, Rules, Drills & Gear`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

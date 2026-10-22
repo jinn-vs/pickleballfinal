@@ -15,10 +15,10 @@ export default function Hero() {
           <div className="py-12 md:py-14">
             <span className="text-[12px] font-bold uppercase tracking-[0.18em] text-brand">{SITE_NAME}</span>
             <h1 className="display-lg mt-4 max-w-2xl text-on-dark">
-              Master pickleball — from your first serve to the tournament court.
+              Master pickleball, from your first serve to the tournament court.
             </h1>
             <p className="mt-4 max-w-xl text-[17px] leading-relaxed text-on-dark-muted">
-              Clear rules, practical drills, honest gear reviews and winning strategy — written for
+              Clear rules, practical drills, honest gear reviews and winning strategy, written for
               real players at every level.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="hidden md:block" aria-hidden />
         </div>
 
-        {/* Player — feet flush with the bottom of the hero section */}
+        {/* Player, feet flush with the bottom of the hero section */}
         <Image
           src="/player.webp"
           alt="Pickleball player"

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 /**
- * Lightweight search box. For now it routes to /blog?q=… (the blog list can
+ * Lightweight search box. For now it routes to /blog?q=... (the blog list can
  * read the query later); wire a full search index when content grows.
  */
 export default function SearchBar({ className = "" }: { className?: string }) {
@@ -35,7 +35,7 @@ export default function SearchBar({ className = "" }: { className?: string }) {
         type="search"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="Search articles…"
+        placeholder="Search articles..."
         aria-label="Search articles"
         className="h-10 w-full rounded-[var(--radius-full)] border border-hairline-dark bg-navy-mid pl-9 pr-4 text-sm text-on-dark placeholder:text-on-dark-muted outline-none focus:border-brand"
       />

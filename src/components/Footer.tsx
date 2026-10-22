@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="max-w-sm">
             <Image src="/logo.webp" alt={`${SITE_NAME} logo`} width={200} height={61} className="h-10 w-auto" />
             <p className="mt-4 text-sm leading-relaxed text-on-dark-muted">
-              Pickleball news, rules, drills, gear reviews and strategy — everything you need to
+              Pickleball news, rules, drills, gear reviews and strategy, everything you need to
               learn the game and level up your play.
             </p>
             <Link href="/blog/rss.xml" className="mt-4 inline-block text-sm font-semibold text-brand">

@@ -7,7 +7,7 @@ export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Browse Pickleball Topics",
-  description: `Browse ${SITE_NAME} by topic — basics, rules, strategy, gear and more.`,
+  description: `Browse ${SITE_NAME} by topic: basics, rules, strategy, gear and more.`,
   alternates: { canonical: "/blog/categories" },
 };
 
