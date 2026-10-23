@@ -28,9 +28,6 @@ export default function Footer() {
               Pickleball news, rules, drills, gear reviews and strategy, everything you need to
               learn the game and level up your play.
             </p>
-            <Link href="/blog/rss.xml" className="mt-4 inline-block text-sm font-semibold text-brand">
-              RSS feed →
-            </Link>
           </div>
 
           <div>
@@ -62,7 +59,7 @@ export default function Footer() {
 
         <div className="mt-14 border-t border-hairline-dark pt-6">
           <p className="text-xs leading-relaxed text-on-dark-muted">
-            © {year} {SITE_NAME}. All rights reserved. Content is for general informational
+            © {year} {SITE_NAME} All rights reserved. Content is for general informational
             purposes only and is not professional coaching, medical or purchasing advice.
           </p>
         </div>
