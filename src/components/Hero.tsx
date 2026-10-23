@@ -23,7 +23,7 @@ export default function Hero() {
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link href="/blog" className="btn btn-on-dark">
-                Read the latest guides →
+                Read the latest guides
               </Link>
               <Link href="/blog/categories" className="btn btn-secondary-on-dark">
                 Browse topics
