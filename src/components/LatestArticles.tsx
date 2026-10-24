@@ -20,7 +20,7 @@ export default function LatestArticles({ posts }: { posts: PostSummary[] }) {
 
       {/* Featured */}
       <Link href={`/blog/${featured.slug}`} className="card card-hover group mb-8 grid overflow-hidden md:grid-cols-2">
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface-soft md:aspect-auto">
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface-soft">
           {featured.featuredImage ? (
             <Image
               src={featured.featuredImage}
