@@ -9,7 +9,7 @@ export const SITE_URL = (
 export const SITE_NAME = "Pickleballreads";
 export const SITE_DESCRIPTION =
   "Pickleball news, rules, drills, gear reviews and strategy, everything you need to learn the game and level up, from first serve to tournament play.";
-export const CONTACT_EMAIL = "hello@pickleballreads.com";
+export const CONTACT_EMAIL = "pickleballreads@gmail.com";
 
 export const absoluteUrl = (path: string) =>
   path.startsWith("http") ? path : `${SITE_URL}${path.startsWith("/") ? "" : "/"}${path}`;
